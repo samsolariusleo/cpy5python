@@ -7,10 +7,10 @@
 # main
 
 # prompt for radius
-radius = int(input("Enter radius: "))
+radius = float(input("Enter radius: "))
 
 # prompt for length
-length = int(input("Enter length: "))
+length = float(input("Enter length: "))
 
 # calculate volume
 from math import pi
