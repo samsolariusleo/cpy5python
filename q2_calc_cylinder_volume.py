@@ -2,20 +2,13 @@
 # Author: Gan Jing Ying
 # Created: 20130122
 # Modified: 20130122
-# Description: Program that computes the volume of a cylinder.
+# Description: Program that calculates the volume of a cylinder.
 
-# main
-
-# prompt user to input radius of circular base
 radius = int(input("Enter radius: "))
+length = int(input("Enter length: "))
 
-# prompt user to input length of cylinder
-length = int(input("Enter length: ")
-
-# calculate volume of cylinder
-from math import *
+from math import pi
 area = radius * radius * pi
 volume = area * length
 
-# return volume
-print(volume)
+print("Volume: {0:.3f}".format(volume))
