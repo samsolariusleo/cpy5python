@@ -13,4 +13,4 @@ temperature = float(input("Enter temperature (Fahrenheit): "))
 temperature = (5/9) * (temperature - 32)
 
 # display result
-print(temperature)
+print("Temperature in Celsius: {0:.2f}".format(temperature))
