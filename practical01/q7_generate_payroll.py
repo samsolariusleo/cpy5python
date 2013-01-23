@@ -10,13 +10,13 @@
 name = input("Enter name: ")
 
 # prompt for weekly working hours
-hours_weekly = int(input("Enter number of hours worked weekly: "))
+hours_weekly = float(input("Enter number of hours worked weekly: "))
 
 # prompt for hourly pay rate
-pay_rate = int(input("Enter hourly pay rate($): "))
+pay_rate = float(input("Enter hourly pay rate($): "))
 
 # prompt for CPF contribution rate
-contribution = int(input("Enter CPF contribution rate(%): "))
+contribution = float(input("Enter CPF contribution rate(%): "))
 
 # calculate gross pay
 gross_pay = hours_weekly * pay_rate
@@ -26,6 +26,17 @@ calc_contribution = gross_pay * (contribution / 100)
 
 # calculate net pay
 net_pay = gross_pay - calc_contribution
+
+# convert int and float to str
+gross_pay = "%0.2f" % gross_pay
+calc_contribution = "%0.2f" % calc_contribution
+net_pay = "%0.2f" % net_pay
+hours_weekly = str(hours_weekly)
+pay_rate = str(pay_rate)
+gross_pay = str(gross_pay)
+contribution = str(contribution)
+calc_contribution = str(calc_contribution)
+net_pay = str(net_pay)
 
 # return results
 print("Payroll statement for " + name)
