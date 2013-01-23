@@ -31,6 +31,9 @@ net_pay = gross_pay - calc_contribution
 gross_pay = "%0.2f" % gross_pay
 calc_contribution = "%0.2f" % calc_contribution
 net_pay = "%0.2f" % net_pay
+# The "%0.2f" function converts a number (int or float_ to a 2 s.f. number
+# Learned this online because the formatting thing I learned in class
+# didn't seem to work in this code... O.O
 hours_weekly = str(hours_weekly)
 pay_rate = str(pay_rate)
 gross_pay = str(gross_pay)
