@@ -11,10 +11,10 @@
 letter = input("Enter letter: ")
 
 # convert letter and return result
-while letter == letter.upper():
-    print("Error! The letter is an upper-case!")
+while letter == letter.lower():
+    print("Error! The letter is a lower-case!")
     letter = input("Enter letter: ")
-print("Converted letter: " + letter.upper())
+print("Converted letter: " + letter.lower())
 
 
 # When the user inputs a non-upper-case letter, the user will have to re-input
