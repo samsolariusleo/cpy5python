@@ -42,6 +42,7 @@ calc_contribution = str(calc_contribution)
 net_pay = str(net_pay)
 
 # return results
+print("~~~~~ PAYROLL IS AS FOLLOWS ~~~~~")
 print("Payroll statement for " + name)
 print("Number of hours worked in week: " + str(hours_weekly))
 print("Hourly pay rate: " + str(pay_rate))
