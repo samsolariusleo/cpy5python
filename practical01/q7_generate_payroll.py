@@ -1,7 +1,7 @@
 # Filename: q7_generate_payroll.py
 # Author: Gan Jing Ying
 # Created: 20130123
-# Modified: 20130123
+# Modified: 20130128
 # Description: Program that prints a payroll statement from given information.
 
 # main
