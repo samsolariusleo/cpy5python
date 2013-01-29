@@ -7,21 +7,15 @@
 # main
 
 # prompt for lengths
-length01 = int(input("Enter side 1: ")
-length02 = int(input("Enter side 2: ")
-length03 = int(input("Enter side 3: ")
+side01 = int(input("Enter side 1: "))
+side02 = int(input("Enter side 2: "))
+side03 = int(input("Enter side 3: "))
 
 # calculate perimeter of triangle
-perimeter = length01 + length02 + length03
+perimeter = side01 + side02 + side03
 
 # check values and return results
-if length01 + length02 > length03:
-  print("Perimeter = " + str(perimeter))
-elif length01 + length03 > length02:
-  print("Perimeter = " + str(perimeter))
-elif length02 + length03 > length01:
-  print("Perimeter = " + str(perimeter))
+if side01+side02 > side03 and side01+side03 > side02 and side02+side03 > side01:
+    print("Perimeter = " + str(perimeter))
 else:
-  print("Invalid triangle!")
-
-
+    print("Invalid triangle!")
