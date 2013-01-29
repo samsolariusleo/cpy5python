@@ -22,3 +22,4 @@ grade_boundary = [[100, 70, "A"], [69, 60, "B"], [59, 55, "C"],
 for e in grade_boundary:
     if e[0] >= score >= e[1]:
         print(e[2])
+
