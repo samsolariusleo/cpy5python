@@ -27,8 +27,6 @@ alldays = [31, 28, 31, 30, 31, 30,
 # else, days are normal
 
 if month == 2 and year % 4 == 0:
-    print(allmonths[month - 1] + year + "has" + alldays[-1] + "days")
-elif month == 2 and year % 4 != 0:
-    print(allmonths[month - 1] + year + "has" + alldays[month-1] + "days")
+    print(allmonths[month-1] + year + "has" + alldays[-1] + "days")
 else:
-    print(allmonths[month - 1] + year + "has" + alldays[month-1] + "days")
+    print(allmonths[month-1] + year + "has" + alldays[month-1] + "days")
