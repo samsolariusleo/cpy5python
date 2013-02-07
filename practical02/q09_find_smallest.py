@@ -15,4 +15,4 @@ while n**2 < 12000:
     n = n + 1
 
 #print result
-print("The smallest integer n for n^2 greater than 12000 is " + str(n) + ".")
+print("The smallest integer n for n^2 greater than 12000 is " + str(n))
