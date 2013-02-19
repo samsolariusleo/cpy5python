@@ -2,6 +2,8 @@
 # Author: Gan Jing Ying
 # Created: 20130219
 # Modified: 20130219
+# Description: Program that defines a function which returns the reverse of a
+# number given by the user.
 
 # define variables
 i = 0
