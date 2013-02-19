@@ -5,8 +5,6 @@
 # Description: Program that defines a function to find the greatest common
 # divisor of two numbers.
 
-# define variables
-
 # define function
 def smaller(m,n):
     if m > n:
