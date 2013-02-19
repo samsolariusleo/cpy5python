@@ -17,11 +17,13 @@ def is_prime(n):
             return False
     return True
 
+### test function
+##print(is_prime(11))
+##print(is_prime(9))
+
 # main
 
 # Need to make use of function is_prime(n), formatting, while loops (maybe),
 # for loops (don't think so, but perhaps...), len()
 
-# test
-print(is_prime(11))
-print(is_prime(9))
+
