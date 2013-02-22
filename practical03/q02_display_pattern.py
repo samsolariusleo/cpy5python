@@ -1,7 +1,7 @@
 # Filename: q02_display_pattern.py
 # Author: Gan Jing Ying
 # Created: 20130219
-# Modified: 20130219
+# Modified: 20130222
 # Description: Program that defines a function to display a pattern.
 
 # define functions
@@ -24,8 +24,9 @@ def no_of_char(n):
     else:
         print("Error!")
 
-def display_pattern(n, char):
+def display_pattern(n):
     answer = ""
+    char = no_of_char(n)
     formatting = "{0:>%ds}"%char
     for i in range(0,n):
         answer = " " + str(i) + answer
@@ -49,7 +50,7 @@ while integer == 0:
     integer = int(input("Enter number: "))
 
 # display pattern
-display_pattern(integer, no_of_char(integer))
+display_pattern(integer)
 
 
 
