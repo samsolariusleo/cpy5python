@@ -17,12 +17,19 @@ def is_prime(n):
             return False
     return True
 
-### test function
-##print(is_prime(11))
-##print(is_prime(9))
+def print_matrix():
+    integer = 2 # initialize number
+    for i in range(0,100):
+        for e in range(0,10):
+            while is_prime(integer) == False:
+                integer = integer + 1
+            print("{0:>5}".format(str(integer)), end=" ")
+            integer = integer + 1
+        print()
 
 # main
-
-# Need to make use of function is_prime(n), formatting, while loops (maybe),
-# for loops (don't think so, but perhaps...), len()
-
+print("The first 1000 Prime Numbers are: ")
+print()
+print("<Start Prime Numbers>")
+print_matrix()
+print("<End Prime Numbers>")
