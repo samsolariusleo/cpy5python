@@ -5,8 +5,15 @@
 # Description: Program that defines a function that displays a square matrix
 # of random values (either 0 or 1).
 
-# define variables
+import random
 
 # define functions
+def print_matrix(n):
+    for i in range(0, n): # rows
+        for k in range(0, n): # columns
+            print(random.randint(0,1), end=" ")
+        print()
 
 # main
+integer = int(input("Enter matrix length: "))
+print_matrix(integer)
