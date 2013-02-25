@@ -1,3 +1,2 @@
 Current Progress:
-- Completed q01, q02, q03, q04, q06, q07 and q08
-- Made a template for q05, but have yet attempted it.
+- Completed all questions
