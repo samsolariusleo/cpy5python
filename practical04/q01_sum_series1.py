@@ -1,4 +1,4 @@
-# Filename: q01_sum_series.py
+# Filename: q01_sum_series1.py
 # Author: Gan Jing Ying
 # Created: 20130225
 # Modified: 20130225
@@ -6,14 +6,14 @@
 # of a series of numbers.
 
 # define recursive function
-def sum_series(i):
+def sum_series1(i):
     if i == 0:
         return 0
     elif i == 1:
         return 1
     else:
-        return 1/i + sum_series(i-1)
+        return 1/i + sum_series1(i-1)
 
 # main
 integer = int(input("Enter integer: "))
-print("Sum of Series = " + str(sum_series(integer)))
+print("Sum of Series = " + str(sum_series1(integer)))
