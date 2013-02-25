@@ -12,6 +12,8 @@ def sum_series(i):
     elif i == 1:
         return 1
     else:
-        return sum_series(
+        return 1/i + sum_series(i-1)
 
 # main
+integer = int(input("Enter integer: "))
+print("Sum of Series = " + str(sum_series(integer)))
