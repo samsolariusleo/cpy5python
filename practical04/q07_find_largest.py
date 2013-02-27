@@ -7,8 +7,15 @@
 
 # define recursive function
 def find_largest(alist):
-    alist.sort()
-    return alist[-1]
+    if len(alist) != 1:
+        if alist[0] > alist[1]:
+            alist.remove(alist[1])
+            return find_largest(alist)
+        else:
+            alist.remove(alist[0])
+            return find_largest(alist)
+    else:
+        return alist[0]
 
 # define functions
 def create_array():
