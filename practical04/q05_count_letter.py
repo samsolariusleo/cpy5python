@@ -7,14 +7,16 @@
 
 # define recursive function
 def count_letter(string, character):
-    if string[0] == character and len(string) == 1:
-        return True
-    elif string[0] != character and len(string) == 1:
-        return False
-    elif string[0] == character:
-        return True + count_letter(string[1:],character)
+    if len(string) != 1:
+        if string[0] == character:
+            return True + count_letter(string[1:],character)
+        else:
+            return False + count_letter(string[1:],character)
     else:
-        return False + count_letter(string[1:],character)
+        if string[0] == character:
+            return True
+        else:
+            return False
 
 # main
 string = input("Enter what you want to search in: ")
